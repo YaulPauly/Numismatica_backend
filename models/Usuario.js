@@ -31,7 +31,7 @@ const usuarioSchema = mongoose.Schema({
     },
     whatsapp: {
         type: Boolean,
-        default: false,
+        default: true,
     },
     token: {
         type: String,

@@ -16,9 +16,7 @@ router
     .get(checkAuth, verAnuncios)
     .post(checkAuth, crearAnuncio);
 
-router
-    .route("/publicos")
-    .get(checkAuth, verTotalAnuncios);
+router.get("/publicos", verTotalAnuncios)
 
 router
     .route("/:id")
